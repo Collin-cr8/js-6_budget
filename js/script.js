@@ -8,3 +8,9 @@ var tripInfo = function () {
     var numDays = Number(prompt("How many days does your trip last?"));
     calculateDailyBudget(totalBudget, accomodation, numDays);
 };
+
+//Calculate daily budget
+var calculateDailyBudget = function (totalBudget, accomodation, numDays) {
+    var daily = ((totalBudget - accomodation) / numDays).toFixed(2);
+    dailyBudget.innerText = `You can spend $${daily} a day on food and fun.`;
+  };
