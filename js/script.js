@@ -14,3 +14,5 @@ var calculateDailyBudget = function (totalBudget, accomodation, numDays) {
     var daily = ((totalBudget - accomodation) / numDays).toFixed(2);
     dailyBudget.innerText = `You can spend $${daily} a day on food and fun.`;
   };
+
+  tripInfoButton.addEventListener("click", tripInfo);
